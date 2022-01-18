@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "A585EC87-39BD-4A15-8D61-0D11D2D74E55",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "CoreHelperTests",
+        "name" : "CoreHelperTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "NetworkingTests",
+        "name" : "NetworkingTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:..\/SPMPackages.xcodeproj",
+        "identifier" : "5BDDA84C27957360002E958F",
+        "name" : "SPMPackagesTests"
+      }
+    }
+  ],
+  "version" : 1
+}
