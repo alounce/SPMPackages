@@ -10,6 +10,8 @@ import Combine
 import CoreHelpers
 import Networking
 
+import AppCenterCrashes
+
 final class CatalogViewController: UIViewController {
     @IBOutlet private var tableView: UITableView!
     
@@ -32,6 +34,11 @@ final class CatalogViewController: UIViewController {
         super.viewDidAppear(animated)
         load()
         change() // just to see diffable datasource in action
+        
+// Just for testing crash registration
+//        DispatchQueue.main.asyncAfter(deadline: .now().advanced(by: .seconds(10))) {
+//            fatalError("### OLEKSA: Simulating crash")
+//        }
     }
     
     private func configure() {
