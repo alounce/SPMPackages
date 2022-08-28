@@ -14,21 +14,21 @@
   "testTargets" : [
     {
       "target" : {
-        "containerPath" : "container:",
+        "containerPath" : "container:Core",
         "identifier" : "CoreHelperTests",
         "name" : "CoreHelperTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:",
+        "containerPath" : "container:Core",
         "identifier" : "NetworkingTests",
         "name" : "NetworkingTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:..\/SPMPackages.xcodeproj",
+        "containerPath" : "container:SPMPackages.xcodeproj",
         "identifier" : "5BDDA84C27957360002E958F",
         "name" : "SPMPackagesTests"
       }

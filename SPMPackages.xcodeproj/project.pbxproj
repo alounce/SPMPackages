@@ -16,6 +16,7 @@
 		5BB98FD828BB557D007E6E5B /* AppCenterAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5BB98FD728BB557D007E6E5B /* AppCenterAnalytics */; };
 		5BB98FDA28BB557D007E6E5B /* AppCenterCrashes in Frameworks */ = {isa = PBXBuildFile; productRef = 5BB98FD928BB557D007E6E5B /* AppCenterCrashes */; };
 		5BB98FDC28BB557D007E6E5B /* AppCenterDistribute in Frameworks */ = {isa = PBXBuildFile; productRef = 5BB98FDB28BB557D007E6E5B /* AppCenterDistribute */; };
+		5BB98FDE28BBACA7007E6E5B /* ProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB98FDD28BBACA7007E6E5B /* ProductTests.swift */; };
 		5BDDA83B2795735E002E958F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDDA83A2795735E002E958F /* AppDelegate.swift */; };
 		5BDDA83D2795735E002E958F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDDA83C2795735E002E958F /* SceneDelegate.swift */; };
 		5BDDA83F2795735E002E958F /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDDA83E2795735E002E958F /* CatalogViewController.swift */; };
@@ -43,6 +44,7 @@
 		5B56BE0B2795DDD40072AD65 /* CompleteTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = CompleteTestPlan.xctestplan; sourceTree = "<group>"; };
 		5B9EA3E327958B25003FE671 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		5B9EA3EE27959D7A003FE671 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		5BB98FDD28BBACA7007E6E5B /* ProductTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTests.swift; sourceTree = "<group>"; };
 		5BDDA8372795735E002E958F /* SPMPackages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SPMPackages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BDDA83A2795735E002E958F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BDDA83C2795735E002E958F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				5BDDA85127957360002E958F /* PackagesTests.swift */,
+				5BB98FDD28BBACA7007E6E5B /* ProductTests.swift */,
 			);
 			path = SPMPackagesTests;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BDDA85227957360002E958F /* PackagesTests.swift in Sources */,
+				5BB98FDE28BBACA7007E6E5B /* ProductTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
