@@ -9,13 +9,39 @@ import XCTest
 @testable import SPMPackages
 
 class ProductTests: XCTestCase {
+    
+    var products = Products()
+    let expectedProductID = 1
+    let expectedProductTitle = "Test"
+    let expectedProductDetails = "Test details"
+    let expectedProductPrice = 9
+    
+    override func setUpWithError() throws {
+        let first = Product(
+            id: expectedProductID,
+            title: expectedProductTitle,
+            details: expectedProductDetails,
+            price: expectedProductPrice
+        )
+        products.append(first)
+    }
 
     func test_product_init() throws {
-        let sut = Product(id: 1, title: "Test", details: "Test details", price: 9)
-        XCTAssertEqual(sut.id, 1)
-        XCTAssertEqual(sut.title, "Test")
-        XCTAssertEqual(sut.details, "Test details")
-        XCTAssertEqual(sut.price, 9)
+        let sut = products.first!
+        XCTAssertEqual(sut.id, expectedProductID)
+        XCTAssertEqual(sut.title, expectedProductTitle)
+        XCTAssertEqual(sut.details, expectedProductDetails)
+        XCTAssertEqual(sut.price, expectedProductPrice)
+    }
+    
+    func test_product_codable() throws {
+        let sut = products.first!
+        let data = try JSONEncoder().encode(sut)
+        let decoded = try JSONDecoder().decode(Product.self, from: data)
+        XCTAssertEqual(decoded.id, expectedProductID)
+        XCTAssertEqual(decoded.title, expectedProductTitle)
+        XCTAssertEqual(decoded.details, expectedProductDetails)
+        XCTAssertEqual(decoded.price, expectedProductPrice)
     }
 
 }
