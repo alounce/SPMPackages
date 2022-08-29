@@ -1,3 +1,6 @@
+
+[![Build status](https://build.appcenter.ms/v0.1/apps/1af55bed-6d94-4424-bb11-7f6a218db141/branches/master/badge)](https://appcenter.ms)
+
 # Packages
 
 This is a PoC of splitting an iOS project into a set of libraries using the Swift package manager. 
